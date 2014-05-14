@@ -1,5 +1,5 @@
 .b-form__field {
-  width: 600px;
+  width: 300px;
   padding: 3px;
   font-size: 14px;
   color: #444;
@@ -9,4 +9,8 @@
   &:focus, &:active, &:hover {
     border-color: #aaa;
   }
+}
+
+.b-form__field__text {
+  width: 100%;
 }
