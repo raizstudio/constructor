@@ -1,11 +1,14 @@
 #= require constructor_core/jquery_bundle
 #= require ckeditor/ckeditor
+#= require wysihtml5/bootstrap3-wysihtml5.all.min
+#= require wysihtml5/bootstrap-wysihtml5.ru-RU
 #= require constructor_pages/urlify
 #= require ./jquery.ui.nestedSortable
 #= require ./sortable_tree/initializer
 #= require ./expandable_tree/hashchange
 #= require ./expandable_tree/restorable
 #= require ./expandable_tree/initializer
+#= require bootstrap
 #= require_self
 
 $(document).ready ->
@@ -42,6 +45,20 @@ $(document).ready ->
   $('html').click (e) ->
     if !$(e.target).is('.b-tree__edit-name')
       reset_edit_page()
+
+  $('#wysihtml').wysihtml5({
+    "font-styles": true,
+    "emphasis": true,
+    "lists": true,
+    "html": true,
+    "link": false,
+    "image": false,
+    "color": false,
+    "blockquote": false,
+    "size": 'sm',
+    "locale": 'ru-RU'
+    })
+
 
 $(document).on 'click', '.b-tree__add', (e) ->
   e.preventDefault()

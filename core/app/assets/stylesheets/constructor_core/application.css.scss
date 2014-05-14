@@ -1,6 +1,8 @@
 //= require ckeditor/contents
 //= require ckeditor/skins/moono/editor.css
+//= require wysihtml5/bootstrap3-wysihtml5
 //= require font-awesome
+//= require bootstrap
 //= require jquery.ui.all
 //= require tree
 //= require sortable_tree
@@ -21,6 +23,10 @@ body {
   color: #333;
   font-size: 16px;
   font-family: Ubuntu, Arial, sans-serif;
-  font-weight: 100;
+  font-weight: normal;
   background: #ddd;
+}
+
+label {
+  font-weight: normal;
 }
