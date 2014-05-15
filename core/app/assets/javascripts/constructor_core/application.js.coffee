@@ -10,7 +10,6 @@
 #= require ./expandable_tree/initializer
 #= require bootstrap
 #= require_self
-
 $(document).ready ->
   $('.auto_url').hide()
   $('#page_url').hide()
@@ -46,12 +45,13 @@ $(document).ready ->
     if !$(e.target).is('.b-tree__edit-name')
       reset_edit_page()
 
+
   $('#wysihtml').wysihtml5({
     "font-styles": true,
     "emphasis": true,
     "lists": true,
+    "link": true,
     "html": true,
-    "link": false,
     "image": false,
     "color": false,
     "blockquote": false,
