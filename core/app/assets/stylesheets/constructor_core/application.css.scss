@@ -1,12 +1,10 @@
-//= require ckeditor/contents
-//= require ckeditor/skins/moono/editor.css
-//= require wysihtml5/bootstrap3-wysihtml5
+//= require wysihtml5/bootstrap
 //= require font-awesome
-//= require bootstrap
 //= require jquery.ui.all
 //= require tree
 //= require sortable_tree
 //= require nested_options
+//= require wysihtml5/bootstrap3-wysihtml5
 //= require_self
 
 @import 'framework/all';
@@ -23,10 +21,6 @@ body {
   color: #333;
   font-size: 16px;
   font-family: Ubuntu, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
   background: #ddd;
-}
-
-label {
-  font-weight: normal;
 }

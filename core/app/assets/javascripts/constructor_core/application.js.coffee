@@ -1,5 +1,4 @@
 #= require constructor_core/jquery_bundle
-#= require ckeditor/ckeditor
 #= require wysihtml5/bootstrap3-wysihtml5.all.min
 #= require wysihtml5/bootstrap-wysihtml5.ru-RU
 #= require constructor_pages/urlify
@@ -8,8 +7,8 @@
 #= require ./expandable_tree/hashchange
 #= require ./expandable_tree/restorable
 #= require ./expandable_tree/initializer
-#= require bootstrap
 #= require_self
+
 $(document).ready ->
   $('.auto_url').hide()
   $('#page_url').hide()
@@ -44,7 +43,6 @@ $(document).ready ->
   $('html').click (e) ->
     if !$(e.target).is('.b-tree__edit-name')
       reset_edit_page()
-
 
   $('#wysihtml').wysihtml5({
     "font-styles": true,
