@@ -1,4 +1,5 @@
 #= require constructor_core/jquery_bundle
+#= require wysihtml5/bootstrap
 #= require wysihtml5/bootstrap3-wysihtml5.all.min
 #= require wysihtml5/bootstrap-wysihtml5.ru-RU
 #= require constructor_pages/urlify
