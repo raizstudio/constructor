@@ -1,3 +1,3 @@
 module ConstructorCore
-  VERSION = '1.0.0beta2'
+  VERSION = '1.1.2.1'
 end
