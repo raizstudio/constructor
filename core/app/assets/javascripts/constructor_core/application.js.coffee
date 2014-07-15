@@ -45,7 +45,7 @@ $(document).ready ->
     if !$(e.target).is('.b-tree__edit-name')
       reset_edit_page()
 
-  $('#wysihtml').wysihtml5({
+  $('.wysihtml').wysihtml5({
     "font-styles": true,
     "emphasis": true,
     "lists": true,

@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version           = ConstructorCore::VERSION
   s.summary           = %q{Core for Constructor CMS}
   s.summary           = %q{Constructor Core}
-  s.authors           = ['Ivan Zotov']
+  s.authors           = ['Ivan Zotov, Raiz studio']
   s.require_paths     = %w(lib)
   s.description       = 'Core for Constructor CMS'
   s.email             = 'ivanzotov@gmail.com'
