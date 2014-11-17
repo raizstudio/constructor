@@ -55,7 +55,6 @@ module ConstructorPages
           params[:remove_image].each do |name, trash|
             f_id = ConstructorPages::Field.where(code_name: name).where(template_id: @page.template_id).first.id
             image_for_delete = ConstructorPages::Types::ImageType.where(page_id: @page.id).where(field_id: f_id)
-            puts image_for_delete
             image_for_delete.delete_all
         end
         end

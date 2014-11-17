@@ -11,7 +11,7 @@ module ConstructorPages
 
       validates :value, presence: true
       # Max size is 5 MB
-      validates_size_of :value, maximum: 5.megabytes, message: :incorrect_size
+      validates_size_of :value, maximum: 50.megabytes, message: :incorrect_size
     end
   end
 end

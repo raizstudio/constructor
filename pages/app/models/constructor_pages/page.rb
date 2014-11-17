@@ -166,7 +166,7 @@ module ConstructorPages
 
     # Return true if there is a file upload field in page
     def multipart?
-      fields.each {|f| return true if f.type_value == 'image'}
+      fields.each {|f| return true if f.type_value == 'image' or f.type_value == 'file'}
       false
     end
 
